@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> Next Auth V5 authentication with Prisma, MongoDB, Tailwind, and shadcn/ui.
+> Next Auth V5 role-based authentication with Prisma, MongoDB, Tailwind, and shadcn/ui.
 
 ## Install
 
