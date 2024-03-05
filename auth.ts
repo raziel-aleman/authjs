@@ -11,7 +11,7 @@ declare module "@auth/core/types" {
     interface User {
         role: UserRole;
         isTwoFactorEnabled: boolean;
-        isOAuth: boolean;
+        isOAuth?: boolean;
     }
 
     interface Session {
@@ -23,6 +23,7 @@ declare module "@auth/core/jwt" {
     interface JWT {
         role: UserRole;
         isTwoFactorEnabled: boolean;
+        isOAuth?: boolean;
     }
 }
 
@@ -85,7 +86,7 @@ export const {
             if (session.user) {
                 session.user.name = token.name;
                 session.user.email = token.email as string;
-                session.user.isOAuth = token.isOAuth as boolean;
+                session.user.isOAuth = token.isOAuth;
             }
 
             return session;
